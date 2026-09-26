@@ -1,0 +1,188 @@
+
+body {
+    margin: 0;
+    background: #f1f4f6;
+    color: #263440;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.container {
+    max-width: 1000px;
+}
+
+.navbar {
+    padding: 16px 0;
+}
+
+.navbar .container {
+    gap: 16px;
+}
+
+.logo {
+    display: inline-block;
+    width: 34px;
+    margin-right: 8px;
+    border-radius: 4px;
+    background: #c7f49c;
+    color: #172732;
+    text-align: center;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+}
+
+.menu a {
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #c7f49c;
+    text-decoration: underline;
+}
+
+.apresentacao {
+    padding: 36px 0;
+    background: #172732;
+    color: #ffffff;
+}
+
+.apresentacao-conteudo {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.texto-apresentacao {
+    flex: 1;
+    min-width: 0;
+}
+
+.foto-apresentacao {
+    display: block;
+    position: relative;
+    top: 0;
+    width: 360px;
+    max-width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    margin-right: 32px;
+}
+
+.etiqueta {
+    color: #c7f49c;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+h1 {
+    margin-bottom: 16px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.subtitulo {
+    font-size: 20px;
+}
+
+.conteudo {
+    padding-top: 28px;
+    padding-bottom: 12px;
+}
+
+.caixa {
+    margin-bottom: 20px;
+    padding: 28px;
+    border: 1px solid #dce3e7;
+    border-radius: 8px;
+    background: #ffffff;
+    scroll-margin-top: 20px;
+}
+
+h2 {
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #c7f49c;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.item {
+    margin-bottom: 24px;
+}
+
+.detalhe {
+    color: #596773;
+    font-size: 14px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+.lista-competencias {
+    columns: 2;
+}
+
+a {
+    color: #245b43;
+    overflow-wrap: anywhere;
+}
+
+a:focus-visible {
+    outline: 3px solid #73a94e;
+    outline-offset: 4px;
+}
+
+.rodape {
+    padding: 28px 0;
+    background: #e3e9ed;
+    text-align: center;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .apresentacao-conteudo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .foto-apresentacao {
+        top: 0;
+        width: 260px;
+        margin-right: 0;
+        align-self: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .apresentacao {
+        padding: 32px 0;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .caixa {
+        padding: 20px;
+    }
+
+    .lista-competencias {
+        columns: 1;
+    }
+}
